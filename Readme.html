@@ -1,0 +1,229 @@
+<!DOCTYPE html><html><head>
+      <title>Readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/pablo/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.14/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h3 id="ethical-hacking-tools"><strong>ETHICAL HACKING TOOLS</strong> </h3>
+<p><img src="data:image/jpeg;base64,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" alt="hack_the_world"></p>
+<p><em><strong>What you will find here?</strong></em><br>
+On this list is mayority free, wellknow aplications and tools for ethical hacking and pentest, with generic propouses. Of course all was tested by myself.<br>
+What you will not find here?<br>
+Especific tools for especific sotfware, hardware or Operating System like WPScan or Mimikatz.</p>
+<ul>
+<li>
+<p>General Security Info<br>
+OWASP <a href="https://owasp.org/">https://owasp.org/</a></p>
+</li>
+<li>
+<p>General propouse tools<br>
+Netcat <a href="https://netcat.sourceforge.net/">https://netcat.sourceforge.net/</a>  called the swiss army knife<br>
+Socat <a href="http://www.dest-unreach.org/socat/">http://www.dest-unreach.org/socat/</a>  Netcat on steroids<br>
+Curl <a href="http://curl.haxx.se/">http://curl.haxx.se/</a> cURL is a command-line tool used for transferring data to and from servers using various protocols like HTTP, HTTPS, FTP, and more.</p>
+</li>
+<li>
+<p>Port and Vulnerability scanners<br>
+Nmap <a href="https://nmap.org/">https://nmap.org/</a> network port scanner<br>
+Zmap <a href="https://zmap.io/">https://zmap.io/</a> a GUI for nmap<br>
+Openvas <a href="http://www.openvas.org/">http://www.openvas.org/</a> A discover vulns application<br>
+Nessus <a href="http://www.tenable.com/products/nessus-vulnerability-scanner">http://www.tenable.com/products/nessus-vulnerability-scanner</a> Another vulns discover</p>
+</li>
+<li>
+<p>Web browsers &amp;  addons<br>
+Firefox <a href="https://www.mozilla.org">https://www.mozilla.org</a> Browser<br>
+Wappalizer  <a href="https://www.wappalyzer.com/">https://www.wappalyzer.com/</a> This extensión identifies technologies on a web<br>
+FoxyProxy <a href="https://getfoxyproBEST">https://getfoxyproBEST</a> Proxy switcher for browsers.</p>
+</li>
+<li>
+<p>Web pentest frameworks<br>
+Burpsuite <a href="https://portswigger.net/burp">https://portswigger.net/burp</a> (Free version limited)<br>
+Zap Attack Proxy <a href="https://www.zaproxy.org/">https://www.zaproxy.org/</a><br>
+W3af <a href="http://w3af.sourceforge.net/">http://w3af.sourceforge.net/</a><br>
+Nitkto <a href="http://www.cirt.net/nikto2">http://www.cirt.net/nikto2</a></p>
+</li>
+<li>
+<p>Fuzzers<br>
+Wfuzz <a href="http://www.edge-security.com/wfuzz.php">http://www.edge-security.com/wfuzz.php</a><br>
+Gobuster <a href="https://github.com/OJ/gobuster">https://github.com/OJ/gobuster</a></p>
+</li>
+<li>
+<p>Bruteforce<br>
+THCHydra <a href="https://www.thc.org/thc-hydra/">https://www.thc.org/thc-hydra/</a></p>
+</li>
+<li>
+<p>SQL Injection<br>
+SQLi Payloads <a href="https://github.com/payloadbox/sql-injection-payload-list">https://github.com/payloadbox/sql-injection-payload-list</a><br>
+Sqlmap <a href="https://github.com/sqlmapproject/sqlmap/wiki">https://github.com/sqlmapproject/sqlmap/wiki</a> Automatic SQLi</p>
+</li>
+<li>
+<p>XSS Cross Site Scripting<br>
+<a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet">https://portswigger.net/web-security/cross-site-scripting/cheat-sheet</a></p>
+</li>
+<li>
+<p>Exploiting Frameworks<br>
+Metasploit <a href="https://www.metasploit.com/">https://www.metasploit.com/</a><br>
+Armitage <a href="http://www.fastandeasyhacking.com">www.fastandeasyhacking.com</a></p>
+</li>
+<li>
+<p>Web Shells<br>
+r57shell <a href="https://github.com/r57shell">https://github.com/r57shell</a><br>
+c99shell <a href="https://c99shell.net/">https://c99shell.net/</a><br>
+Wweevely3 <a href="https://github.com/epinna/weevely3">https://github.com/epinna/weevely3</a></p>
+</li>
+<li>
+<p>DDoS<br>
+Ufonet <a href="https://github.com/epsylon/ufonet">https://github.com/epsylon/ufonet</a> DDoS over TOR<br>
+Hping <a href="http://www.hping.org/">http://www.hping.org/</a> Stress</p>
+</li>
+<li>
+<p>OSINT<br>
+Shodan <a href="https://www.shodan.io/">https://www.shodan.io/</a><br>
+Google <a href="https://google.com">https://google.com</a></p>
+</li>
+<li>
+<p>Social Engineer<br>
+Social Engineer toolkit <a href="https://github.com/trustedsec/social-engineer-toolkit">https://github.com/trustedsec/social-engineer-toolkit</a></p>
+</li>
+<li>
+<p>Networks<br>
+Openvpn <a href="https://openvpn.net/">https://openvpn.net/</a> OpenVPN<br>
+Tor <a href="https://torproject.org/">https://torproject.org/</a> The Onion Router<br>
+I2p <a href="https://geti2p.net/en/">https://geti2p.net/en/</a>  I2P Network<br>
+Onioncat <a href="https://www.onioncat.org/">https://www.onioncat.org/</a> VPN over TOR</p>
+</li>
+<li>
+<p>Wifi<br>
+Aircrack <a href="https://www.aircrack-ng.org/">https://www.aircrack-ng.org/</a></p>
+</li>
+<li>
+<p>Packet inspectors<br>
+Wireshark <a href="https://www.wireshark.org/">https://www.wireshark.org/</a></p>
+</li>
+<li>
+<p>IDS<br>
+Suricata <a href="https://suricata.io/">https://suricata.io/</a><br>
+Snort <a href="https://www.snort.org">https://www.snort.org</a></p>
+</li>
+<li>
+<p>Firewall<br>
+OpenSense <a href="https://opnsense.org">https://opnsense.org</a><br>
+IPFire <a href="https://www.ipfire.org/">https://www.ipfire.org/</a></p>
+</li>
+<li>
+<p>Encoding and ciphers:<br>
+<a href="http://decode.fr">decode.fr</a> <a href="https://www.dcode.fr/en">https://www.dcode.fr/en</a> Web with decrypters for all kind of ciphers, included root13, caesar, etc</p>
+</li>
+<li>
+<p>Bruteforce<br>
+THCHydra <a href="https://www.thc.org/thc-hydra/">https://www.thc.org/thc-hydra/</a></p>
+</li>
+<li>
+<p>SQL Injection<br>
+Sql payloads <a href="https://github.com/payloadbox/sql-injection-payload-list">https://github.com/payloadbox/sql-injection-payload-list</a><br>
+Sqlmap <a href="https://github.com/sqlmapproject/sqlmap/wiki">https://github.com/sqlmapproject/sqlmap/wiki</a></p>
+</li>
+<li>
+<p>XSS Cross Site Scripting<br>
+<a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet">https://portswigger.net/web-security/cross-site-scripting/cheat-sheet</a></p>
+</li>
+<li>
+<p>Exploiting Frameworks<br>
+Metasploit <a href="https://www.metasploit.com/">https://www.metasploit.com/</a><br>
+armitage <a href="http://www.fastandeasyhacking.com">www.fastandeasyhacking.com</a></p>
+</li>
+<li>
+<p>Web Shells<br>
+r57shell <a href="https://github.com/r57shell">https://github.com/r57shell</a><br>
+c99shell <a href="https://c99shell.net/">https://c99shell.net/</a><br>
+Wweevely3 <a href="https://github.com/epinna/weevely3">https://github.com/epinna/weevely3</a></p>
+</li>
+<li>
+<p>DDoS<br>
+Ufonet <a href="https://github.com/epsylon/ufonet">https://github.com/epsylon/ufonet</a><br>
+Hping <a href="http://www.hping.org/">http://www.hping.org/</a></p>
+</li>
+<li>
+<p>OSINT<br>
+Shodan <a href="https://www.shodan.io/">https://www.shodan.io/</a><br>
+Google <a href="https://google.com">https://google.com</a></p>
+</li>
+<li>
+<p>Reverse Engineering<br>
+IDA Free <a href="https://hex-rays.com/ida-free">https://hex-rays.com/ida-free</a><br>
+Radare2 <a href="https://www.radare.org/r/index.html">https://www.radare.org/r/index.html</a></p>
+</li>
+<li>
+<p>Password Cracking<br>
+Hashcat <a href="https://hashcat.net/wiki/">https://hashcat.net/wiki/</a> Cracking passwords tool<br>
+Crunch <a href="https://github.com/crunchsec/crunch">https://github.com/crunchsec/crunch</a> Dictionary generator</p>
+</li>
+<li>
+<p>Networks<br>
+Openvpn <a href="https://openvpn.net/">https://openvpn.net/</a><br>
+Tor <a href="https://torproject.org/">https://torproject.org/</a><br>
+I2p <a href="https://geti2p.net/en/">https://geti2p.net/en/</a><br>
+Onioncat <a href="https://www.onioncat.org/">https://www.onioncat.org/</a></p>
+</li>
+<li>
+<p>Wifi<br>
+Aircrack <a href="https://www.aircrack-ng.org/">https://www.aircrack-ng.org/</a><br>
+Reaver <a href="https://code.google.com/archive/p/reaver-wps/">https://code.google.com/archive/p/reaver-wps/</a></p>
+</li>
+<li>
+<p>Packet inspectors<br>
+Wireshark <a href="https://www.wireshark.org/">https://www.wireshark.org/</a> tshark for commandline</p>
+</li>
+</ul>
+<h1>Dedicated cibersecurity Linux distros</h1>
+<ul>
+<li>
+<p>Forensic<br>
+Caine Linux <a href="https://www.caine-live.net/">https://www.caine-live.net/</a></p>
+</li>
+<li>
+<p>Pentest<br>
+Kali Linux <a href="https://www.kali.org/">https://www.kali.org/</a><br>
+BackBox <a href="https://www.backbox.org/">https://www.backbox.org/</a></p>
+</li>
+</ul>
+<h1>Training</h1>
+<ul>
+<li>Vulnerable machines<br>
+DVWA <a href="https://github.com/digininja/DVWA">https://github.com/digininja/DVWA</a><br>
+Metasploitable <a href="https://information.rapid7.com/download-metasploitable-2017.html">https://information.rapid7.com/download-metasploitable-2017.html</a></li>
+<li>CTFs<br>
+PicoCTF <a href="https://picoctf.org/">https://picoctf.org/</a><br>
+Ctf.hacker101 <a href="https://ctf.hacker101.com/">https://ctf.hacker101.com/</a></li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
