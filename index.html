@@ -4,40 +4,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
       <link rel="stylesheet" href="file:////home/pablo/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.14/crossnote/dependencies/katex/katex.min.css">
-      <style>
-        .hacking-text {
-            font-size: 1rem;
-            font-weight: bold;
-            text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
-        }
-        .prefix {
-            font-size: 3rem; /* Aumenta el tamaño de ">_ " */
-        }
-        .cursor {
-            display: inline-block;
-            width: 5px;
-            background-color: #0ac20a;
-            margin-left: 5px;
-            animation: blink 1s infinite;
-        }
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
-        .clock {    
-            font-size: 20px;
-            font-family: Orbitron;
-            letter-spacing: 7px;
-        }
-
-      </style>
-      <style>
-      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
-
-      </style>
-      <script type="text/javascript" src="displayTime.js"></script>
-      <div class="clock" id="actual_date">Tuesday, March 4, 14:17:23</div>
+      <link rel="stylesheet" href="assets/css/styles.css">
+      
+     
+      <script type="text/javascript" src="assets/js/displayTime.js"></script>
+      <div class="clock" id="actual_date">Tuesday, March 4, 14:17:23</div><br>
       <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
     // your code here
@@ -47,186 +18,190 @@
     
     
       <div class="crossnote markdown-preview  ">
-      
-            <div class="hacking-text"><span class="prefix">>_&nbsp; </span>
-                   ETHICAL HACKING TOOLS<span class="cursor">&nbsp;</span>
-              </div>
-<p><img src="ethicalhackingtools.png" alt="hack_the_world" width="25%"></p>
+        <div class="hacking-text"> WELCOME<center><img src="assets/imgs/spinning-skull-proge-2.gif" width="10%" aling="right"></center><br>
+        <span class="prefix">>_&nbsp; </span>
+                   ETHICAL HACKING TOOLS<span class="cursor">&nbsp;</span><br>
+        </div>
+      </div>
+
+
 
 <p>If you just want to take a look over my repository or contact me click here:<p><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" width="20px"><a href="https://github.com/pmartinezrhub/">&nbsp;https://github.com/pmartinezrhub</a><br><a href="https://www.linkedin.com/in/pablo-m-8552a790/"><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="20px"></img>&nbsp;Linkedin</a><br>
 <a href="mailto":pmartinezr@proton.me>&#128231;&nbsp;pmartinezr@proton.me</a>
 <p><em><strong>What you will find here?</strong></em>
 On this list is mayority free, wellknow aplications and tools for ethical hacking and pentest, with generic propouses. Of course all was tested by myself.<br>
 What you will not find here?<br>
-Especific tools for especific sotfware, hardware or Operating System like WPScan or Mimikatz.</p>
+Especific tools for especific sotfware, hardware or Operating System like WPScan or Mimikatz.<br>
+<h1>Tools</h1>
 <ul>
+
 <li>
-<p>General Security Info<br>
-OWASP <a href="https://owasp.org/">https://owasp.org/</a></p>
-Exploitdb <a href="https://gitlab.com/exploit-database/exploitdb">https://gitlab.com/exploit-database/exploitdb</a> archive of public exploits</p>
+<p><h3>General Security Info</h3>
+OWASP <a href="https://owasp.org/">https://owasp.org/</a><br>
+Exploitdb <a href="https://gitlab.com/exploit-database/exploitdb">https://gitlab.com/exploit-database/exploitdb</a>archive of public exploits<br>
 Hacking articles <a href="https://github.com/Ignitetechnologies">https://github.com/Ignitetechnologies</a>  Lots of hacking articles
 </li>
 <li>
-<p>General propouse tools<br>
+<p><h3>General propouse tools</h3>
 Netcat <a href="https://netcat.sourceforge.net/">https://netcat.sourceforge.net/</a>  called the swiss army knife<br>
 Socat <a href="http://www.dest-unreach.org/socat/">http://www.dest-unreach.org/socat/</a>  Netcat on steroids<br>
-Curl <a href="http://curl.haxx.se/">http://curl.haxx.se/</a> cURL is a command-line tool used for transferring data to and from servers using various protocols like HTTP, HTTPS, FTP, and more.</p>
+Curl <a href="http://curl.haxx.se/">http://curl.haxx.se/</a> cURL is a command-line tool used for transferring data to and from servers using various protocols like HTTP, HTTPS, FTP, and more.<br>
 </li>
 <li>
-<p>Network scanners</p>      
+<p><h3>Network scanners</h3>
 Netdiscover <a href="https://github.com/netdiscover-scanner/netdiscover">https://github.com/netdiscover-scanner/netdiscover</a>network address discovering tool<br> 
 Nmap <a href="https://nmap.org/">https://nmap.org/</a> network port scanner<br>
 Zmap <a href="https://zmap.io/">https://zmap.io/</a> ZMap is a fast single-packet network scanner <br>
 Nmap-scripts <a href="https://github.com/cldrn/nmap-nse-scripts">https://github.com/cldrn/nmap-nse-scripts</a> Collection of nmap scripts
 </li>
 <li>
-<p>Vulnerability scanners<br>
+<p><h3>Vulnerability scanners</h3>
 Openvas <a href="http://www.openvas.org/">http://www.openvas.org/</a> A discover vulns application<br>
-Nessus <a href="http://www.tenable.com/products/nessus-vulnerability-scanner">http://www.tenable.com/products/nessus-vulnerability-scanner</a> Another vulns discover</p>
+Nessus <a href="http://www.tenable.com/products/nessus-vulnerability-scanner">http://www.tenable.com/products/nessus-vulnerability-scanner</a> Another vulns discover<br>
 Nuclei <a href="https://github.com/projectdiscovery/nuclei">https://github.com/projectdiscovery/nuclei</a> 
 </li>
 <li>
-<p>Web browsers &amp;  addons<br>
+<p><h3>Web browsers &amp;  addons</h3>
 Firefox <a href="https://www.mozilla.org">https://www.mozilla.org</a> Browser<br>
 Wappalyzer  <a href="https://www.wappalyzer.com/">https://www.wappalyzer.com/</a> This extensión identifies technologies on a web<br>
-FoxyProxy <a href="https://getfoxyproBEST">https://getfoxyproBEST</a> Proxy switcher for browsers.</p>
+FoxyProxy <a href="https://getfoxyproBEST">https://getfoxyproBEST</a> Proxy switcher for browsers.<br>
 </li>
 <li>
-<p>Web pentest frameworks<br>
+<p><h3>Web pentest frameworks</h3>
 Burpsuite <a href="https://portswigger.net/burp">https://portswigger.net/burp</a> (Free version limited)<br>
 Zap Attack Proxy <a href="https://www.zaproxy.org/">https://www.zaproxy.org/</a><br>
 W3af <a href="http://w3af.sourceforge.net/">http://w3af.sourceforge.net/</a><br>
-Nitkto <a href="http://www.cirt.net/nikto2">http://www.cirt.net/nikto2</a></p>
+Nitkto <a href="http://www.cirt.net/nikto2">http://www.cirt.net/nikto2</a><br>
 Whatweb <a href="https://www.whatweb.net">https://www.whatweb.net</a> Netx generation web scanner
 </li>
 <li>
-<p>Fuzzers<br>
+<p><h3>Fuzzers</h3>
 Wfuzz <a href="http://www.edge-security.com/wfuzz.php">http://www.edge-security.com/wfuzz.php</a><br>
-Gobuster <a href="https://github.com/OJ/gobuster">https://github.com/OJ/gobuster</a></p>
+Gobuster <a href="https://github.com/OJ/gobuster">https://github.com/OJ/gobuster</a><br>
 </li>
 <li>
-<p>Bruteforce<br>
-THCHydra <a href="https://www.thc.org/thc-hydra/">https://www.thc.org/thc-hydra/</a></p>
+<p><h3>Bruteforce</h3>
+THCHydra <a href="https://www.thc.org/thc-hydra/">https://www.thc.org/thc-hydra/</a><br>
 </li>
 <li>
-<p>SQL Injection<br>
+<p><h3>SQL Injection</h3>
 SQLi Payloads <a href="https://github.com/payloadbox/sql-injection-payload-list">https://github.com/payloadbox/sql-injection-payload-list</a><br>
-Sqlmap <a href="https://github.com/sqlmapproject/sqlmap/wiki">https://github.com/sqlmapproject/sqlmap/wiki</a> Automatic SQLi</p>
+Sqlmap <a href="https://github.com/sqlmapproject/sqlmap/wiki">https://github.com/sqlmapproject/sqlmap/wiki</a> Automatic SQLi<br>
 </li>
 <li>
-<p>XSS Cross Site Scripting<br>
+<p><h3>XSS Cross Site Scripting</h3>
 XSStrike <a href="https://github.com/s0md3v/XSStrike">https://github.com/s0md3v/XSStrike</a> XSStrike is a Cross Site Scripting detection suite <br>
-Portswigger cheat-sheet for XSS <a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet">https://portswigger.net/web-security/cross-site-scripting/cheat-sheet</a></p>
+Portswigger cheat-sheet for XSS <a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet">https://portswigger.net/web-security/cross-site-scripting/cheat-sheet</a><br>
 </li>
 <li>
-<p>Exploiting Frameworks<br>
+<p><h3>Exploiting Frameworks</h3>
 Metasploit <a href="https://www.metasploit.com/">https://www.metasploit.com/</a><br>
-Armitage <a href="http://www.fastandeasyhacking.com">www.fastandeasyhacking.com</a></p>
+Armitage <a href="http://www.fastandeasyhacking.com">www.fastandeasyhacking.com</a><br>
 BeEF <a href="https://beefproject.com/">https://beefproject.com/</a> BeEF is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser. <br> 
 NetExec <a href="//github.com/Pennyw0rth/NetExec">https://github.com/Pennyw0rth/NetExec</a>  Network service exploitation tool<br>
 Evil-Winrm <a href="//github.com/Hackplayers/evil-winrm">https://github.com/Hackplayers/evil-winrm</a> The ultimate WinRM shell for hacking/pentesting<br>
 </li>
 <li>
-<p>Web Shells<br>
+<p><h3>Web Shells</h3>
 r57shell <a href="https://github.com/r57shell">https://github.com/r57shell</a><br>
 c99shell <a href="https://c99shell.net/">https://c99shell.net/</a><br>
-Weevely3 <a href="https://github.com/epinna/weevely3">https://github.com/epinna/weevely3</a></p>
+Weevely3 <a href="https://github.com/epinna/weevely3">https://github.com/epinna/weevely3</a><br>
 </li>
 <li>
-<p>DDoS<br>
+<p><h3>DDoS</h3>
 Ufonet <a href="https://github.com/epsylon/ufonet">https://github.com/epsylon/ufonet</a> DDoS over TOR<br>
-Hping <a href="http://www.hping.org/">http://www.hping.org/</a> Stress</p>
+Hping <a href="http://www.hping.org/">http://www.hping.org/</a> Stress<br>
 </li>
 <li>
-<p>OSINT<br>
+<p><h3>OSINT</h3>
 Shodan <a href="https://www.shodan.io/">https://www.shodan.io/</a><br>
-Google <a href="https://google.com">https://google.com</a></p>
+Google <a href="https://google.com">https://google.com</a><br>
 </li>
 <li>
-<p>Social Engineer<br>
-Social Engineer toolkit <a href="https://github.com/trustedsec/social-engineer-toolkit">https://github.com/trustedsec/social-engineer-toolkit</a></p>
+<p><h3>Social Engineer</h3>
+Social Engineer toolkit <a href="https://github.com/trustedsec/social-engineer-toolkit">https://github.com/trustedsec/social-engineer-toolkit</a><br>
 
 </li>
 <li>
-<p>Networks<br>
+<p><h3>Networks</h3>
 Openvpn <a href="https://openvpn.net/">https://openvpn.net/</a> OpenVPN<br>
 Tor <a href="https://torproject.org/">https://torproject.org/</a> The Onion Router<br>
 I2p <a href="https://geti2p.net/en/">https://geti2p.net/en/</a>  I2P Network<br>
-Onioncat <a href="https://www.onioncat.org/">https://www.onioncat.org/</a> VPN over TOR</p>
+Onioncat <a href="https://www.onioncat.org/">https://www.onioncat.org/</a> VPN over TOR<br>
 Macchanger <a href="https://github.com/alobbs/macchanger">https://github.com/alobbs/macchanger</a>
 </li>
 <li>
-<p>Wifi<br>
-Aircrack <a href="https://www.aircrack-ng.org/">https://www.aircrack-ng.org/</a></p>
-PixieWPS <a herf="https://github.com/wiire-a/pixiewps">https://github.com/wiire-a/pixiewps</a> WPS PIN exploiting</p>
-Reaver <a href="https://github.com/tiagob0b/Reaver-WPS">https://github.com/tiagob0b/Reaver-WPS</a> WPS wireless bruteforce </p>
-Wifiphisher <a href="https://github.com/wifiphisher/wifiphisher">https://github.com/wifiphisher/wifiphisher</a> Phising , Evil Twin, portal captive. </p>
+<p><h3>Wifi</h3>
+Aircrack <a href="https://www.aircrack-ng.org/">https://www.aircrack-ng.org/</a><br>
+PixieWPS <a herf="https://github.com/wiire-a/pixiewps">https://github.com/wiire-a/pixiewps</a> WPS PIN exploiting<br>
+Reaver <a href="https://github.com/tiagob0b/Reaver-WPS">https://github.com/tiagob0b/Reaver-WPS</a> WPS wireless bruteforce <br>
+Wifiphisher <a href="https://github.com/wifiphisher/wifiphisher">https://github.com/wifiphisher/wifiphisher</a> Phising , Evil Twin, portal captive. <br>
 Fluxion <a href="https://github.com/FluxionNetwork/fluxion">https://github.com/FluxionNetwork/fluxion</a> retrieve the WPA/WPA2 key from a target access point by means of a social engineering (phishing) attack 
 </li>
 <li>
-<p>Router</p>
+<p><h3>Router</h3>
 RouterSploit <a href="https://github.com/threat9/routersploit">https://github.com/threat9/routersploit</a>
 </li>
 <li>
-<p>Packet inspectors<br>
-Wireshark <a href="https://www.wireshark.org/">https://www.wireshark.org/</a></p>
+<p><h3>Packet inspectors</h3>
+Wireshark <a href="https://www.wireshark.org/">https://www.wireshark.org/</a><br>
 TCPDump <a href="https://www.tcpdump.org/">https://www.tcpdump.org/</a>
 </li>
 <li>
-<p>IDS<br>
+<p><h3>IDS</h3>
 Suricata <a href="https://suricata.io/">https://suricata.io/</a><br>
-Snort <a href="https://www.snort.org">https://www.snort.org</a></p>
+Snort <a href="https://www.snort.org">https://www.snort.org</a><br>
 </li>
 <li>
-<p>Firewall<br>
+<p><h3>Firewall</h3>
 OpenSense <a href="https://opnsense.org">https://opnsense.org</a><br>
-IPFire <a href="https://www.ipfire.org/">https://www.ipfire.org/</a></p>
+IPFire <a href="https://www.ipfire.org/">https://www.ipfire.org/</a><br>
 </li>
 <li>
-<p>Encoding and ciphers:<br>
-<a href="http://decode.fr">decode.fr</a> <a href="https://www.dcode.fr/en">https://www.dcode.fr/en</a> Web with decrypters for all kind of ciphers, included root13, caesar, etc</p>
+<p><h3>Encoding and ciphers:</h3>
+<a href="http://decode.fr">decode.fr</a> <a href="https://www.dcode.fr/en">https://www.dcode.fr/en</a> Web with decrypters for all kind of ciphers, included root13, caesar, etc<br>
 </li>
 <li>
-<p>SQL Injection<br>
+<p><h3>SQL Injection</h3>
 Sql payloads <a href="https://github.com/payloadbox/sql-injection-payload-list">https://github.com/payloadbox/sql-injection-payload-list</a><br>
-Sqlmap <a href="https://github.com/sqlmapproject/sqlmap/wiki">https://github.com/sqlmapproject/sqlmap/wiki</a></p>
+Sqlmap <a href="https://github.com/sqlmapproject/sqlmap/wiki">https://github.com/sqlmapproject/sqlmap/wiki</a><br>
 </li>
 <li>
-<p>Reverse Engineering<br>
+<p><h3>Reverse Engineering</h3>
 IDA Free <a href="https://hex-rays.com/ida-free">https://hex-rays.com/ida-free</a><br>
-Radare2 <a href="https://www.radare.org/r/index.html">https://www.radare.org/r/index.html</a></p>
+Radare2 <a href="https://www.radare.org/r/index.html">https://www.radare.org/r/index.html</a><br>
 </li>
 
 <li>
-<p>Password Cracking<br>
+<p><h3>Password Cracking</h3>
 Hashcat <a href="https://hashcat.net/wiki/">https://hashcat.net/wiki/</a> Cracking passwords tool<br>
-Crunch <a href="https://github.com/crunchsec/crunch">https://github.com/crunchsec/crunch</a> Dictionary generator</p>
+Crunch <a href="https://github.com/crunchsec/crunch">https://github.com/crunchsec/crunch</a> Dictionary generator<br>
 Cuup <a href="https://github.com/Mebus/cupp">https://github.com/Mebus/cupp</a> Common User Passwords Profiler
 </li>
-
+</ul>
 <h1>Dedicated cibersecurity Linux distros</h1>
 <ul>
 <li>
-<p>Forensic<br>
-Caine Linux <a href="https://www.caine-live.net/">https://www.caine-live.net/</a></p>
+<p><h3>Forensic</h3>
+Caine Linux <a href="https://www.caine-live.net/">https://www.caine-live.net/</a><br>
 </li>
 <li>
-<p>Pentest<br>
+<p><h3>Pentest</h3>
 Kali Linux <a href="https://www.kali.org/">https://www.kali.org/</a><br>
-BackBox <a href="https://www.backbox.org/">https://www.backbox.org/</a></p>
-BlackArch <a href="https://www.blackarch.org//">https://www.blackarch.org/</a></p>
+BackBox <a href="https://www.backbox.org/">https://www.backbox.org/</a><br>
+BlackArch <a href="https://www.blackarch.org//">https://www.blackarch.org/</a><br>
 <li>
-<p>Security in general</p>
+<p><h3>Security in general</h3>
 Parrot OS <a href="https://www.parrotsec.org/">https://www.parrotsec.org/</a><br>
 Qbes OS <a href="https://www.qubes-os.org/">https://www.qubes-os.org/</a>
 </li>
 </ul>
 <h1>Training</h1>
 <ul>
-<li>Vulnerable machines<br>
+<li><h3>Vulnerable machines</h3>
 DVWA <a href="https://github.com/digininja/DVWA">https://github.com/digininja/DVWA</a><br>
 Metasploitable <a href="https://information.rapid7.com/download-metasploitable-2017.html">https://information.rapid7.com/download-metasploitable-2017.html</a></li>
-<li>CTFs<br>
+<li><h3>CTFs</h3>
 PicoCTF <a href="https://picoctf.org/">https://picoctf.org/</a><br>
 Ctf.hacker101 <a href="https://ctf.hacker101.com/">https://ctf.hacker101.com/</a></li>
 </ul>
